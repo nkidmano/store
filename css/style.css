@@ -38,10 +38,9 @@ body {
 .category-nav {
   list-style: none;
   font-weight: 900;
-  display: flex;
-  justify-content: space-between; }
+  display: flex; }
   .category-nav__item:not(:last-child) {
-    margin-right: 4rem; }
+    margin-right: 2.5rem; }
   .category-nav__link:link, .category-nav__link:visited {
     text-decoration: none;
     text-transform: uppercase;
@@ -51,11 +50,10 @@ body {
     color: #fff; }
 
 .search {
-  flex: 0 0 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  flex: 0 0 25%;
+  display: flex; }
   .search__input {
+    font-family: inherit;
     font-size: 1.3rem;
     font-weight: 700;
     border: none;
@@ -78,9 +76,9 @@ body {
     transform: translateY(0.15rem); }
 
 .user-nav {
+  align-self: stretch;
   font-weight: 700;
   display: flex;
-  justify-content: center;
   align-items: center; }
   .user-nav [class$="-link"] {
     text-transform: uppercase;
@@ -93,8 +91,7 @@ body {
     border-radius: .4rem 0 0 .4rem;
     border-right: none;
     display: flex;
-    align-items: center;
-    justify-content: center; }
+    align-items: center; }
   .user-nav__login-link:hover {
     color: #fff;
     border: 2px solid #fff;
@@ -103,7 +100,10 @@ body {
     border-left: 2px solid #fff; }
   .user-nav__signup-link {
     border: 2px solid var(--color-grey-light-3);
-    border-radius: 0 .4rem .4rem 0; }
+    border-radius: 0 .4rem .4rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
   .user-nav__signup-link:hover {
     color: #fff;
     border: 2px solid #fff; }

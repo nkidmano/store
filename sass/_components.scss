@@ -1,3 +1,5 @@
+/////////////////////////////////////////////////////////
+/////// LOGO
 .logo-box {
     color: var(--color-grey-light-2);
 
@@ -13,16 +15,18 @@
     }
 }
 
+/////////////////////////////////////////////////////////
+/////// CATEGORY NAVIGATION
+
 .category-nav {
     list-style: none;
     font-weight: 900;
 
     display: flex;
-    justify-content: space-between;
 
     &__item {
         &:not(:last-child) {
-            margin-right: 4rem;
+            margin-right: 2.5rem;
         }
     }
 
@@ -39,14 +43,16 @@
     }
 }
 
+/////////////////////////////////////////////////////////
+/////// SEARCH BAR
+
 .search {
-    flex: 0 0 30%;
+    flex: 0 0 25%;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
 
     &__input {
+        font-family: inherit;
         font-size: 1.3rem;
         font-weight: 700;
         border: none;
@@ -76,11 +82,14 @@
     }
 }
 
+/////////////////////////////////////////////////////////
+/////// USER NAVIGATION
+
 .user-nav {
+    align-self: stretch;
     font-weight: 700;
 
     display: flex;
-    justify-content: center;
     align-items: center;
 
     [class$="-link"] {
@@ -98,7 +107,6 @@
 
         display: flex;
         align-items: center;
-        justify-content: center;
     }
 
     &__login-link:hover {
@@ -114,6 +122,10 @@
     &__signup-link {
         border: 2px solid var(--color-grey-light-3);
         border-radius: 0 .4rem .4rem 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     &__signup-link:hover {
