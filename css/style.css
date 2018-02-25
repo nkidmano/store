@@ -118,59 +118,34 @@ body {
   .user-nav__login-link:hover > .user-nav__icon {
     fill: #fff; }
 
-.square {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.25);
+.game-thumbnail__photo {
+  display: block;
+  width: 100%; }
+
+.game-title {
+  border-bottom: 1px solid var(--color-grey-light-2);
   background-color: #fff; }
-  .square:not(:last-of-type) {
-    margin-right: 1.5rem; }
-  .square__link:link, .square__link:visited {
-    display: inline-block;
-    padding: 1.25rem 0 1.25rem 1rem;
+  .game-title__link:link, .game-title__link:visited {
+    color: var(--color-grey-dark-3);
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 900;
-    color: var(--color-grey-dark-3);
-    transition: all .2s; }
-  .square__link:hover {
+    display: inline-block;
+    padding: .75rem .75rem; }
+  .game-title__link:hover {
     text-decoration: underline; }
-  .square__photo {
-    display: block;
-    width: 100%; }
-  .square__info {
-    border-top: 1px solid var(--color-grey-light-2);
-    background-color: var(--color-grey-light-1);
-    padding: 1.25rem 0 1.25rem 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-content: center; }
-  .square__platform {
+
+.game-info {
+  padding: 1.25rem .75rem; }
+  .game-info__platform {
     display: flex;
     align-items: center; }
-  .square__icon {
+  .game-info__icon {
     width: 2rem;
     height: 2rem; }
-    .square__icon:not(:last-of-type) {
+    .game-info__icon:not(:last-of-type) {
       margin-right: .5rem; }
-  .square__list {
-    list-style: none;
-    display: flex; }
-  .square__item {
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: var(--color-grey-dark-3);
-    padding: .8rem 1.25rem .8rem 1rem;
-    margin: 0 1rem;
-    border: 1px solid currentColor;
-    border-radius: .4rem; }
-  .square__price:link, .square__price:visited {
-    text-decoration: none;
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: var(--color-grey-dark-3); }
 
 .header {
   font-size: 1.6rem;
@@ -199,6 +174,14 @@ body {
   display: flex; }
   .slide-square:not(:last-child) {
     margin-bottom: 5rem; }
+
+.square {
+  box-shadow: 0 0.25rem 0.35rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .square:not(:last-of-type) {
+    margin-right: 2rem; }
 
 .list-view {
   background-color: yellowgreen;
