@@ -28,7 +28,7 @@
 
 .slide-square {
     &:not(:last-child) {
-        margin-bottom: 5rem;
+        margin-bottom: 4rem;
     }
     display: flex;
 }
@@ -47,6 +47,7 @@
 }
 
 .list-view {
-    background-color: yellowgreen;
     flex: 1;
+    background-color: yellowgreen;
+    padding-top: 1rem;
 }

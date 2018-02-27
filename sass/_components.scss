@@ -152,6 +152,21 @@
 }
 
 /////////////////////////////////////////////////////////
+/////// MAIN HEADER
+
+.main-header {
+    padding: 1rem 0;
+
+    &__text {
+        color: var(--color-grey-dark-3);
+        font-size: 1.6rem;
+        font-weight: 900;
+        letter-spacing: .025rem;
+        text-transform: uppercase;
+    }
+}
+
+/////////////////////////////////////////////////////////
 /////// SQUARE
 
 .game-thumbnail {
@@ -170,6 +185,7 @@
         text-decoration: none;
         font-size: 1.4rem;
         font-weight: 900;
+        letter-spacing: .015rem;
         display: inline-block;
         padding: .75rem .75rem;
     }
@@ -236,5 +252,28 @@
     &__price:hover {
         background-color: var(--color-money);
         color: #fff;
+    }
+}
+
+/////////////////////////////////////////////////////////
+/////// LIST VIEW
+
+.list-view-nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+
+    & li {
+        &:hover {
+            border-bottom: 2px solid cornflowerblue;
+        }
+    }
+
+    &__link:link,
+    &__link:visited {
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-decoration: none;
+        color: var(--color-grey-dark-3);
     }
 }

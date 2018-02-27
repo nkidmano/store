@@ -119,6 +119,15 @@ body {
   .user-nav__login-link:hover > .user-nav__icon {
     fill: #fff; }
 
+.main-header {
+  padding: 1rem 0; }
+  .main-header__text {
+    color: var(--color-grey-dark-3);
+    font-size: 1.6rem;
+    font-weight: 900;
+    letter-spacing: .025rem;
+    text-transform: uppercase; }
+
 .game-thumbnail__photo {
   display: block;
   width: 100%; }
@@ -131,6 +140,7 @@ body {
     text-decoration: none;
     font-size: 1.4rem;
     font-weight: 900;
+    letter-spacing: .015rem;
     display: inline-block;
     padding: .75rem .75rem; }
   .game-title__link:hover {
@@ -176,6 +186,18 @@ body {
     background-color: var(--color-money);
     color: #fff; }
 
+.list-view-nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-around; }
+  .list-view-nav li:hover {
+    border-bottom: 2px solid cornflowerblue; }
+  .list-view-nav__link:link, .list-view-nav__link:visited {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--color-grey-dark-3); }
+
 .header {
   font-size: 1.6rem;
   letter-spacing: .1rem;
@@ -202,7 +224,7 @@ body {
 .slide-square {
   display: flex; }
   .slide-square:not(:last-child) {
-    margin-bottom: 5rem; }
+    margin-bottom: 4rem; }
 
 .square {
   box-shadow: 0 0.25rem 0.35rem rgba(0, 0, 0, 0.2);
@@ -214,5 +236,6 @@ body {
     margin-right: 2rem; }
 
 .list-view {
+  flex: 1;
   background-color: yellowgreen;
-  flex: 1; }
+  padding-top: 1rem; }
