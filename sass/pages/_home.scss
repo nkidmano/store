@@ -1,0 +1,14 @@
+.primary-section {
+    display: flex;
+
+    .category-view { 
+        margin-right: 5rem;
+        flex: 0 0 65%;
+    }
+    
+    .list-view {
+        flex: 1;
+        background-color: yellowgreen;
+        padding-top: 1rem;
+    }
+}

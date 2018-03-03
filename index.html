@@ -9,7 +9,7 @@
     <title>Online Store</title>
 </head>
 <body>
-    <header class="header">
+    <nav class="navbar">
         <div class="logo-box">
             <a href="#" class="logo-box__link">
                 game<strong>space</strong>
@@ -37,7 +37,7 @@
                 </svg>
             </button>
         </form>
-        <nav class="user-nav">
+        <div class="user-nav">
             <a href="#" class="user-nav__login-link">
                 <svg class="user-nav__icon">
                     <use xlink:href="img/sprite.svg#icon-user-circle-o"></use>
@@ -47,16 +47,14 @@
             <a href="#" class="user-nav__signup-link">
                 <span class="user-nav_signup-text">sign up</span>
             </a>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <main class="content">
-        <div class="game-section">
-            <div class="main-view">
+    <main class="container">
+        <div class="primary-section">
+            <div class="category-view">
 
-                <div class="main-header">
-                    <span class="main-header__text">trendings</span>
-                </div>
+                <h2 class="secondary-heading">trending</h2>
                 <div class="slide-square">
 
                     <div class="square">
@@ -136,9 +134,7 @@
 
                 </div>
 
-                <div class="main-header">
-                    <span class="main-header__text">top deals</span>
-                </div>
+                <h2 class="secondary-heading">discount</h2>
                 <div class="slide-square">
 
                     <div class="square">
@@ -218,9 +214,7 @@
 
                 </div>
 
-                <div class="main-header">
-                    <span class="main-header__text">best seller</span>
-                </div>
+                <h2 class="secondary-heading">best seller</h2>
                 <div class="slide-square">
 
                     <div class="square">

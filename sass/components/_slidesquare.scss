@@ -1,0 +1,6 @@
+.slide-square {
+    &:not(:last-child) {
+        margin-bottom: 4rem;
+    }
+    display: flex;
+}
