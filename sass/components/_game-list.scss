@@ -1,49 +1,63 @@
-.square {
-    box-shadow: 0 .25rem .35rem rgba(0,0,0,0.2);
-    background-color: #fff;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
+.game-list {
     &:not(:last-child) {
-        margin-right: 2rem;
+        margin-bottom: 4rem;
     }
-}
+    display: flex;
 
-.game-thumbnail {
+    &__item {
+        box-shadow: 0 .25rem .35rem rgba(0,0,0,0.2);
+        background-color: #fff;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+    
+    &__thumbnail {
+        
+    }
+
+    &__photo-link {
+
+    }
+
     &__photo {
         display: block;
         width: 100%;
     }
-}
-
-.game-title {
-    width: 85%;
-    &__link:link,
-    &__link:visited {
-        color: var(--color-grey-dark-3);
-        text-transform: uppercase;
-        text-decoration: none;
-        font-size: 1.4rem;
-        font-weight: 900;
-        letter-spacing: .015rem;
-        display: inline-block;
-        padding: .75rem .75rem;
+    
+    &__title {
+        width: 85%;
     }
 
+    &__link:link,
+    &__link:visited {
+            color: var(--color-grey-dark-3);
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 1.4rem;
+            font-weight: 900;
+            letter-spacing: .015rem;
+            display: inline-block;
+            padding: .75rem .75rem;
+        }
+    
     &__link:hover {
         text-decoration: underline;
     }
-}
-
-.game-info {
-    border-top: 1px solid var(--color-grey-light-2);
-    background-color: var(--color-grey-light-1);
-    padding: 1.25rem 1.25rem;
-
-    display: flex;
-    justify-content: space-between; 
+    
+    &__info {
+        border-top: 1px solid var(--color-grey-light-2);
+        background-color: var(--color-grey-light-1);
+        padding: 1.25rem 1.25rem;
+    
+        display: flex;
+        justify-content: space-between; 
+    }
 
     &__platform {
         display: flex;
@@ -75,6 +89,7 @@
         border: 1px solid currentColor;
         border-radius: .4rem;
         padding: .5rem 1rem;
+        cursor: default;
     }
 
     &__price:link,

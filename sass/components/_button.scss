@@ -1,0 +1,39 @@
+.btn {
+    font-weight: 900;
+    display: inline-block;
+    border: 1px solid currentColor;
+    border-radius: .4rem;
+    transition: all .2s;
+
+    &:link,
+    &:visited {
+        text-decoration: none;
+    }
+
+    &--small {
+        font-size: 1.4rem;
+        padding: .5rem 1rem;
+        &:not(:last-child) {
+            margin-right: .3rem;
+        }
+    }
+
+    &--price {
+        color: var(--color-grey-dark-3);
+
+        &:hover {
+            background-color: var(--color-money);
+            color: #fff;
+        }
+    }
+
+    &--discount {
+        background-color: var(--color-money);
+        color: #fff;
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        cursor: default;
+    }
+}
